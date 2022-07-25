@@ -48,7 +48,7 @@ async function updatePage(url = window.location.href, replace = false) {
             navigator.clipboard.writeText(window.location.href);
         });
         _id('toolPopout').addEventListener('click', () => {
-            window.open(`/tool/${tool.id}/tool.html`, `popup-${tool.id}`, `width=${popupSize.width},height=${popupSize.height}`);
+            window.open(`/tool/${tool.id}/tool.html`, `popup-${tool.id}`, `left=${(screen.availWidth/2)-(popupSize.width/2)},top=${(screen.availHeight/2)-(popupSize.height/2)},width=${popupSize.width},height=${popupSize.height}`);
             updatePage('/');
         });
         document.title = `${tool.name} | ${baseTitle}`;
