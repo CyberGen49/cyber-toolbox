@@ -91,7 +91,7 @@ async function updatePage(url = window.location.href, replace = false) {
                 </label>
                 ${content.join('')}
                 <div style="height: 15px"></div>
-                <h5 style="text-align: center"><a href="#">I have an idea for a new tool...</a></h5>
+                <h5 style="text-align: center"><a target="_blank" href="https://github.com/CyberGen49/cyber-toolbox/issues/new?assignees=CyberGen49&labels=enhancement&template=tool-request.md&title=%5BTool+Request%5D">I have an idea for a new tool...</a></h5>
             </div>
         `;
         _id('launchInPopup').checked = settings.launchInPopup | false;
