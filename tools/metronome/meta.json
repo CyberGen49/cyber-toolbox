@@ -1,0 +1,7 @@
+{
+    "name": "Metronome",
+    "icon": "speed",
+    "desc": "Set and listen to a metronome, or tap to the beat of a song to find its tempo.",
+    "group": "audio",
+    "popup": { "width": 500, "height": 380 }
+}

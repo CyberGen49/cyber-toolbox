@@ -1,0 +1,7 @@
+{
+    "name": "Unix Timestamp Converter",
+    "icon": "schedule",
+    "desc": "Convert between human-readable time and Unix timestamps.",
+    "group": "dev",
+    "hidden": true
+}

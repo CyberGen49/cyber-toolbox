@@ -1,0 +1,7 @@
+{
+    "name": "Random Item Selector",
+    "icon": "casino",
+    "desc": "Randomly select a single item from a list.",
+    "group": "rand",
+    "hidden": true
+}

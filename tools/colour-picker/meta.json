@@ -1,0 +1,7 @@
+{
+    "name": "Colour Picker",
+    "icon": "palette",
+    "desc": "Pick colours and easily copy them in many different formats.",
+    "group": "design",
+    "hidden": true
+}

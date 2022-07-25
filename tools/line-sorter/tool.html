@@ -1,0 +1,34 @@
+
+<div class="col">
+    <div class="row md justify-center">
+        <div class="input dropdown labeled" style="width: 300px">
+            <label>Sort order</label>
+            <select id="order" class="textbox">
+                <option value="az">A-Z</option>
+                <option value="za">Z-A</option>
+                <option value="sl">Shortest to longest</option>
+                <option value="ls">Longest to shortest</option>
+            </select>
+        </div>
+    </div>
+    <div class="row md">
+        <div class="col flex-1">
+            <div class="input labeled">
+                <label>Input</label>
+                <textarea id="input" class="textbox"></textarea>
+            </div>
+        </div>
+        <div class="col flex-1">
+            <div class="input labeled">
+                <label>Output</label>
+                <textarea id="output" class="textbox" disabled></textarea>
+            </div>
+            <div class="row">
+                <button class="btn alt2" data-copy-el="output">
+                    <div class="icon">content_copy</div>
+                    Copy output
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

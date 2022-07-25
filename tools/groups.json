@@ -1,0 +1,12 @@
+[
+    { "id": "text", "name": "Text handling" },
+    { "id": "rand", "name": "Randomization" },
+    { "id": "time", "name": "Date and time" },
+    { "id": "math", "name": "Calculators" },
+    { "id": "audio", "name": "Music" },
+    { "id": "game", "name": "Gaming" },
+    { "id": "design", "name": "Design" },
+    { "id": "net", "name": "Networking" },
+    { "id": "dev", "name": "Developer" },
+    { "id": "wip", "name": "Planned or unfinished" }
+]

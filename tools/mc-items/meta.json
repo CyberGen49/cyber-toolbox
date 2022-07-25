@@ -1,0 +1,7 @@
+{
+    "name": "Minecraft Item ID List",
+    "icon": "grid_view",
+    "desc": "View the names and IDs of all items and blocks in Minecraft.",
+    "group": "game",
+    "hidden": true
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Base64 Converter",
+    "icon": "conversion_path",
+    "desc": "Convert text to and form base64.",
+    "group": "dev"
+}

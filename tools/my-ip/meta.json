@@ -1,0 +1,7 @@
+{
+    "name": "My IP",
+    "icon": "wifi",
+    "desc": "Quickly find and copy your IP address.",
+    "group": "net",
+    "popup": { "width": 450, "height": 200 }
+}

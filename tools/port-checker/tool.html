@@ -1,0 +1,28 @@
+
+<div class="col align-center">
+    <div class="row sm">
+        <div class="input labeled" style="width: 300px">
+            <label>IP or hostname</label>
+            <input id="host" type="text" class="textbox">
+        </div>
+        <div class="input labeled" style="width: 130px">
+            <label>Port</label>
+            <input id="port" type="number" class="textbox" value="443">
+        </div>
+    </div>
+    <div class="row">
+        <button id="useClientIp" class="btn alt2">
+            <div class="icon">near_me</div>
+            Use my IP
+        </button>
+        <button id="go" class="btn" disabled>
+            <div class="icon">network_check</div>
+            Check
+        </button>
+    </div>
+    <div class="row">
+        <div id="resultCont" class="resultCard smaller hidden">
+            <div id="result"></div>
+        </div>
+    </div>
+</div>

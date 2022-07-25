@@ -1,0 +1,7 @@
+{
+    "name": "Minecraft Give Command Generator",
+    "icon": "code",
+    "desc": "Generate a Minecraft /give command for an items with custom names, lore, enchantments, and attributes.",
+    "group": "game",
+    "hidden": true
+}

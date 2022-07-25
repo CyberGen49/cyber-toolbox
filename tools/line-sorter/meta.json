@@ -1,0 +1,6 @@
+{
+    "name": "Line Sorter",
+    "icon": "sort",
+    "desc": "Sort lines alphabetically or by length.",
+    "group": "text"
+}

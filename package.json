@@ -1,0 +1,10 @@
+{
+  "name": "simplecyber-tools",
+  "version": "1.0.0",
+  "description": "A growing collection of useful tools.",
+  "main": "server.js",
+  "scripts": {},
+  "author": "CyberGen49",
+  "license": "ISC",
+  "type": "module"
+}

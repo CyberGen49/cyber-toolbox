@@ -1,0 +1,6 @@
+{
+    "name": "Random Case",
+    "icon": "text_fields",
+    "desc": "Randomize the case (upper and lower) of a piece of text.",
+    "group": "rand"
+}

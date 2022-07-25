@@ -1,0 +1,7 @@
+{
+    "name": "Gradient Generator",
+    "icon": "gradient",
+    "desc": "Create CSS linear and radial gradients.",
+    "group": "design",
+    "hidden": true
+}

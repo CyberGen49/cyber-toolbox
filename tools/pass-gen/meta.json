@@ -1,0 +1,7 @@
+{
+    "name": "Password Generator",
+    "icon": "password",
+    "desc": "Generate random, secure passwords with customizable character sets.",
+    "group": "rand",
+    "hidden": true
+}

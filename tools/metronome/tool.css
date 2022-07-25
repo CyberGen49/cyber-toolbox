@@ -1,0 +1,48 @@
+
+#play {
+    width: 72px;
+    height: 72px;
+    padding: 0px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#play .icon {
+    font-family: 'Material Icons';
+    font-size: 48px;
+}
+
+#bpm {
+    height: 55px;
+    padding-bottom: 4px;
+    font-family: 'Quicksand';
+    font-size: 42px;
+    font-weight: 600;
+}
+
+#beats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    max-width: 300px;
+}
+
+#beats .beat {
+    width: 28px;
+    height: 28px;
+    background: var(--b25);
+    border-radius: 100px;
+    transition: 0.1s ease-in-out;
+}
+#beats .beat.active {
+    background: var(--f90);
+    transition: none;
+}
+
+#timeSignature {
+    font-size: 18px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: var(--f90);
+}

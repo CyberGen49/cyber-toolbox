@@ -1,0 +1,159 @@
+
+<div class="col">
+    <!-- Text inputs -->
+    <div class="row">
+        <div class="input labeled" style="max-width: 250px">
+            <label>Textbox label</label>
+            <input class="textbox" type="text" placeholder="Text box">
+        </div>
+        <div class="input labeled" style="max-width: 180px">
+            <label>Textbox label</label>
+            <input class="textbox" type="number" placeholder="Text box (number)">
+        </div>
+        <div class="input labeled" style="max-width: 400px">
+            <label>Textbox label (disabled)</label>
+            <input disabled class="textbox" type="password" placeholder="Text box (password)">
+        </div>
+    </div>
+    <div class="row">
+        <div class="input labeled flex-grow">
+            <label>Text area label</label>
+            <textarea class="textbox" disabled>Check out this super cool
+multi-line text input!</textarea>
+        </div>
+    </div>
+    <!-- Dropdowns -->
+    <div class="row">
+        <div class="input labeled dropdown" style="max-width: 300px">
+            <label>Dropdown label</label>
+            <select class="textbox">
+                <option selected disabled>Dropdown</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <small>Pick one of the many super cool options.</small>
+        </div>
+    </div>
+    <!-- Radio buttons -->
+    <div class="row">
+        <div class="selectGroup inline">
+            <label>Single select</label>
+            <label class="selectOption">
+                <input type="radio" name="singleSelect" checked>
+                Single option 1
+            </label>
+            <label class="selectOption">
+                <input type="radio" name="singleSelect">
+                Single option 2
+            </label>
+            <label class="selectOption">
+                <input type="radio" name="singleSelect">
+                Single option 3
+            </label>
+        </div>
+    </div>
+    <!-- Checkboxes -->
+    <div class="row">
+        <div class="selectGroup inline">
+            <label>Multiple select</label>
+            <label class="selectOption">
+                <input type="checkbox" name="multiSelect" checked>
+                Multi option 1
+            </label>
+            <label class="selectOption">
+                <input type="checkbox" name="multiSelect">
+                Multi option 2
+            </label>
+            <label class="selectOption">
+                <input type="checkbox" name="multiSelect" checked>
+                Multi option 3
+            </label>
+        </div>
+    </div>
+    <!-- Sliders -->
+    <div class="col gap-8">
+        <div class="input">
+            <label>Range slider</label>
+        </div>
+        <div class="row no-wrap align-center">
+            <div class="input" style="max-width: 70px">
+                <input class="textbox" type="number" id="sliderValue">
+            </div>
+            <div class="slider" data-value-into="sliderValue">
+                <progress></progress>
+                <input type="range" min="0" max="1000" value="727">
+            </div>
+        </div>
+    </div>
+    <!-- Buttons -->
+    <div class="row">
+        <button class="btn small">
+            <div class="icon">send</div>
+            Button
+        </button>
+        <button class="btn small alt">Alternate Button</button>
+        <button class="btn small" disabled>
+            <div class="icon">thumb_down</div>
+            Disabled Button
+        </button>
+        <button class="btn small alt2">
+            <div class="icon">text_fields</div>
+            Text only button
+        </button>
+        <button class="btn small alt2">
+            <div class="icon">content_copy</div>
+        </button>
+    </div>
+    <div class="row">
+        <button class="btn">
+            <div class="icon">send</div>
+            Button
+        </button>
+        <button class="btn alt">Alternate Button</button>
+        <button class="btn" disabled>
+            <div class="icon">thumb_down</div>
+            Disabled Button
+        </button>
+        <button class="btn alt2">
+            <div class="icon">text_fields</div>
+            Text only button
+        </button>
+        <button class="btn alt2">
+            <div class="icon">content_copy</div>
+        </button>
+    </div>
+    <div class="row">
+        <button class="btn large">
+            <div class="icon">send</div>
+            Button
+        </button>
+        <button class="btn large alt">Alternate Button</button>
+        <button class="btn large" disabled>
+            <div class="icon">thumb_down</div>
+            Disabled Button
+        </button>
+        <button class="btn large alt2">
+            <div class="icon">text_fields</div>
+            Text only button
+        </button>
+        <button class="btn large alt2">
+            <div class="icon">content_copy</div>
+        </button>
+    </div>
+    <!-- Result cards -->
+    <div class="row">
+        <div class="resultCard">
+            <div id="result" class="placeholder">Placeholder result text</div>
+            <button class="btn alt2" data-copy-el="result">
+                <div class="icon">content_copy</div>
+            </button>
+        </div>
+        <div class="resultCard">
+            <div id="result2">Result text!</div>
+            <button class="btn alt2" data-copy-el="result2">
+                <div class="icon">content_copy</div>
+            </button>
+        </div>
+    </div>
+</div>

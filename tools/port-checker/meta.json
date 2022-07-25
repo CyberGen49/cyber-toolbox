@@ -1,0 +1,7 @@
+{
+    "name": "Open Port Checker",
+    "icon": "network_check",
+    "desc": "Check if a port is open on a specific IP address.",
+    "group": "net",
+    "popup": { "width": 700, "height": 400 }
+}

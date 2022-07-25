@@ -1,0 +1,7 @@
+{
+    "name": "IP Location Finder",
+    "icon": "pin_drop",
+    "desc": "Find the rough location and local time of an IP address.",
+    "group": "net",
+    "hidden": true
+}

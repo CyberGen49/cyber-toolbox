@@ -1,0 +1,7 @@
+{
+    "name": "Time Between Dates",
+    "icon": "event_repeat",
+    "desc": "Determine the amount of time between two dates.",
+    "group": "time",
+    "hidden": true
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Stopwatch",
+    "icon": "timer",
+    "desc": "Run a stopwatch and count laps.",
+    "group": "time",
+    "hidden": true
+}

@@ -1,0 +1,50 @@
+
+<div class="row justify-center align-center gap-20">
+    <div class="col align-center">
+        <button id="play" class="btn">
+            <div class="icon">play_arrow</div>
+        </button>
+        <button id="tapper" class="btn alt">
+            <div class="icon">touch_app</div>
+            Tap (T)
+        </button>
+    </div>
+    <div class="col">
+        <div class="row align-center gap-8">
+            <div class="col">
+                <div class="input labeled custom" style="width: 140px">
+                    <label>BPM</label>
+                    <input id="bpm" class="textbox" type="number" value="120">
+                </div>
+            </div>
+            <div class="col gap-5">
+                <button id="bpmUp" class="btn small alt2 iconOnly">
+                    <div class="icon">add</div>
+                </button>
+                <button id="bpmDown" class="btn small alt2 iconOnly">
+                    <div class="icon">remove</div>
+                </button>
+            </div>
+        </div>
+        <div class="col gap-10" style="padding: 0px 3px">
+            <div id="beats">
+                <div class="beat"></div>
+                <div class="beat"></div>
+                <div class="beat"></div>
+                <div class="beat"></div>
+            </div>
+            <div class="row align-center">
+                <button id="beatRemove" class="btn small alt iconOnly">
+                    <div class="icon">remove</div>
+                </button>
+                <div id="timeSignature">
+                    <span id="beatCount">4</span>/4
+                </div>
+                <button id="beatAdd" class="btn small alt iconOnly">
+                    <div class="icon">add</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/zounds.min.js"></script>

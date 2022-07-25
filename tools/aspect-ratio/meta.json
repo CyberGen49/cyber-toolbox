@@ -1,0 +1,7 @@
+{
+    "name": "Aspect Ratio Calculator",
+    "icon": "aspect_ratio",
+    "desc": "Calculate aspect ratio given width and height, or vice versa.",
+    "group": "math",
+    "hidden": true
+}

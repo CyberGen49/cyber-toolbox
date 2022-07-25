@@ -1,0 +1,7 @@
+{
+    "name": "Random Number Generator",
+    "icon": "casino",
+    "desc": "Select a random integer between a minimum and maximum, inclusive.",
+    "group": "rand",
+    "popup": { "width": 510, "height": 330 }
+}

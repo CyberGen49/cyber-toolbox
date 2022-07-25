@@ -1,0 +1,7 @@
+{
+    "name": "Weighted Grade Calculator",
+    "icon": "assignment",
+    "desc": "Calculate a percentage grade based on assignment grades with varying weights.",
+    "group": "math",
+    "hidden": true
+}

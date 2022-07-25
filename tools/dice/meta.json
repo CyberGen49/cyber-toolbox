@@ -1,0 +1,7 @@
+{
+    "name": "Dice",
+    "icon": "casino",
+    "desc": "Roll any number of any size of dice.",
+    "group": "rand",
+    "hidden": true
+}

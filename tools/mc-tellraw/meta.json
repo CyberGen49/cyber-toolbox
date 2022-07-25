@@ -1,0 +1,7 @@
+{
+    "name": "Minecraft Tellraw Command Generator",
+    "icon": "code",
+    "desc": "Generate Minecraft /tellraw messages with custom hover and click events.",
+    "group": "game",
+    "hidden": true
+}

@@ -1,0 +1,7 @@
+{
+    "name": "Text Analysis",
+    "icon": "insights",
+    "desc": "Analyze a piece of text, counting characters and words, along with their frequencies.",
+    "group": "text",
+    "hidden": true
+}

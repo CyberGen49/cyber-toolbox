@@ -1,0 +1,7 @@
+{
+    "name": "Timer",
+    "icon": "timer",
+    "desc": "Set a timer and hear a sound when it completes.",
+    "group": "time",
+    "hidden": true
+}

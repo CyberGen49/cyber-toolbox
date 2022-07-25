@@ -1,0 +1,7 @@
+{
+    "name": "Shadow Generator",
+    "icon": "ev_shadow",
+    "desc": "Create CSS box, text, and drop shadows.",
+    "group": "design",
+    "hidden": true
+}
