@@ -122,6 +122,9 @@ window.addEventListener('load', () => {
     _id('home').addEventListener('click', () => {
         updatePage('/');
     });
+    _id('github').addEventListener('click', () => {
+        window.open('https://github.com/CyberGen49/cyber-toolbox', '_blank');
+    });
 });
 window.addEventListener('message', (e) => {
     switch (e.data.action) {
