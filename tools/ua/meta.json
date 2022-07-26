@@ -1,0 +1,7 @@
+{
+    "name": "User Agent Parser",
+    "icon": "code",
+    "desc": "Extract details like the browser and operating system version from a user agent string.",
+    "group": "dev",
+    "hidden": true
+}

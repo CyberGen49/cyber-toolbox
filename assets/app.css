@@ -90,7 +90,6 @@ h5 { font-size: 18px }
 h6 { font-size: 16px } 
 
 a {
-    font-weight: bold;
     color: var(--f85);
     text-decoration: none;
 }
@@ -296,14 +295,6 @@ body#tool.noCenter #container #content {
     margin: 0px auto;
 }
 
-.copyable {
-    cursor: copy;
-    font-size: 18px;
-    font-family: 'Quicksand';
-    font-weight: bold;
-    color: var(--f90);
-}
-
 .resultCard {
     padding: 12px 18px;
     background: var(--b12);
@@ -339,6 +330,32 @@ body#tool.noCenter #container #content {
 }
 .resultCard button {
     flex-shrink: 0;
+}
+.resultCard.statCont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+.resultCard.statCont .name {
+    color: var(--b65);
+    font-size: 18px;
+    font-weight: bold;
+}
+.resultCard.statCont .value {
+    color: var(--f90);
+    font-size: 20px;
+    font-weight: 600;
+}
+.resultCard.statCont .value.copyable {
+    cursor: copy;
+    transition: 0.1s ease-in-out;
+}
+.canHover .resultCard.statCont .value.copyable:hover {
+    color: var(--f95);
+}
+.resultCard.statCont .value.copyable:active {
+    color: var(--b100) !important;
 }
 
 .input {
@@ -711,6 +728,7 @@ label.selectOption .innerLabel {
 .justify-center { justify-content: center }
 .flex-1 { flex: 1 }
 .hidden { display: none }
+.text-center { text-align: center }
 
 @media screen and (max-width: 450px) {
     .row.xs > * {

@@ -6,6 +6,7 @@ import mime from 'mime';
 import clc from 'cli-color';
 import parseHtml from 'node-html-parser';
 import isPortReachable from 'is-port-reachable';
+import fetch from 'node-fetch';
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -84,6 +85,15 @@ const web = http.createServer(async(req, res) => {
                         return end(JSON.stringify({ status: 'open' }));
                     else
                         return end(JSON.stringify({ status: 'closed' }));
+                case 'ipLocate':
+                    res.setHeader('Content-Type', 'application/json');
+                    if (!params.get('host'))
+                        return end(JSON.stringify({ status: 'missingParam' }));
+                    const ipLocateRes = await fetch(`http://ip-api.com/json/${params.get('host')}`);
+                    const ipLocateData = await ipLocateRes.json();
+                    return end(JSON.stringify({
+                        status: 'good', data: ipLocateData
+                    }));
                 default:
                     return end(`404 Not Found`, 404);
             }
