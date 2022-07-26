@@ -45,3 +45,9 @@ _id('go').addEventListener('click', async() => {
     _id('resultCont').classList.remove('hidden');
     _id('go').disabled = false;
 });
+
+window.addEventListener('keyup', (event) => {
+    if (event.code == 'Enter') {
+        _id('go').click();
+    }
+});

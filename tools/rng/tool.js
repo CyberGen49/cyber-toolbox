@@ -47,3 +47,9 @@ _id('commas').addEventListener('change', () => {
 window.addEventListener('load', () => {
     _id('go').click();
 });
+
+window.addEventListener('keyup', (event) => {
+    if (event.code == 'Enter') {
+        _id('go').click();
+    }
+});
