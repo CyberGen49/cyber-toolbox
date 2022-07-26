@@ -2,5 +2,6 @@
     "name": "IP Location Finder",
     "icon": "pin_drop",
     "desc": "Find the rough location and local timezone an IP address.",
-    "group": "net"
+    "group": "net",
+    "popup": { "width": 730, "height": 440 }
 }
