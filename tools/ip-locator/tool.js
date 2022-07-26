@@ -54,7 +54,11 @@ _id('go').addEventListener('click', async() => {
             `;
         });
     } else {
-        // ...
+        _id('results').innerHTML = `
+            <div class="resultCard">
+                <div class="placeholder fail">Failed to locate this IP!</div>
+            </div>
+        `;
     }
     _id('go').disabled = false;
 });
