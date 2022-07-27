@@ -1,0 +1,7 @@
+{
+    "name": "Unit Converter",
+    "icon": "scale",
+    "desc": "Convert between many different units of length, volume, data, and more.",
+    "group": "math",
+    "hidden": true
+}

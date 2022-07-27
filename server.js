@@ -7,6 +7,7 @@ import clc from 'cli-color';
 import parseHtml from 'node-html-parser';
 import isPortReachable from 'is-port-reachable';
 import fetch from 'node-fetch';
+import * as sqlite3 from 'better-sqlite3';
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

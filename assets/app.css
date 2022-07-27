@@ -123,6 +123,7 @@ small {
     gap: 15px;
     transition: 0.1s ease-in-out;
     user-select: none;
+    -webkit-user-select: none;
     overflow: hidden;
     z-index: 5;
 }
@@ -153,6 +154,7 @@ small {
     transition: 0.1s ease-in-out;
     flex-shrink: 0;
     user-select: none;
+    -webkit-user-select: none;
 }
 .canHover .controlBtn:hover,
 .controlBtn:focus-visible {
@@ -229,6 +231,7 @@ small {
     min-height: 65px;
     transition: 0.1s ease-in-out;
     user-select: none;
+    -webkit-user-select: none;
 }
 #main #content .toolCont .toolCard:disabled {
     opacity: 0.5;
@@ -399,6 +402,7 @@ body#tool.noCenter #container #content {
     width: 0px;
     margin-top: 10px;
     user-select: none;
+    -webkit-user-select: none;
     pointer-events: none;
     white-space: nowrap;
     overflow: hidden;
@@ -487,6 +491,7 @@ select.textbox {
     align-items: center;
     justify-content: center;
     user-select: none;
+    -webkit-user-select: none;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     white-space: nowrap;
@@ -703,6 +708,7 @@ label.selectOption .innerLabel {
 ::placeholder {
     color: var(--b70);
     user-select: none;
+    -webkit-user-select: none;
 }
 
 .row {
