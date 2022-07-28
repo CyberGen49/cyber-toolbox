@@ -1,0 +1,111 @@
+{
+    "length": {
+        "name": "Length",
+        "defaultSel": ["ft", "cm"],
+        "units": {
+            "nm": { "name": "Nanometer", "toBase": "x/1e7" },
+            "mim": { "name": "Micrometer", "toBase": "x/10000" },
+            "mm": { "name": "Millimeter", "toBase": "x/10" },
+            "cm": { "name": "Centimeter", "toBase": "x" },
+            "m": { "name": "Meter", "toBase": "x*100" },
+            "km": { "name": "Kilometer", "toBase": "x*1000" },
+            "in": { "name": "Inch", "toBase": "x*2.54" },
+            "ft": { "name": "Foot", "toBase": "in*12" },
+            "yd": { "name": "Yard", "toBase": "ft*3" },
+            "mi": { "name": "Mile", "toBase": "ft*5280" },
+            "earthC": { "name": "Earth's circumference", "toBase": "mi*24901" },
+            "toMoon": { "name": "Earth to the moon", "toBase": "mi*238900" },
+            "ly": { "name": "Light year", "toBase": "m*9.461e+15" },
+            "obu": { "name": "Observable universe", "toBase": "ly*93016000000" }
+        }
+    },
+    "area": {
+        "name": "Area",
+        "defaultSel": ["cm", "ft"],
+        "units": {}
+    },
+    "mass": {
+        "name": "Mass",
+        "defaultSel": ["cm", "ft"],
+        "units": {}
+    },
+    "volume": {
+        "name": "Volume",
+        "defaultSel": ["cm", "ft"],
+        "units": {}
+    },
+    "speed": {
+        "name": "Speed",
+        "defaultSel": ["cm", "ft"],
+        "units": {}
+    },
+    "temp": {
+        "name": "Temperature",
+        "defaultSel": ["f", "c"],
+        "defaultVal": 32,
+        "units": {
+            "c": { "name": "Celsius", "toBase": "x" },
+            "f": { "name": "Fahrenheit",
+                "toBase": "(x-32)*(5/9)", "fromBase": "(x*(9/5))+32" },
+            "k": { "name": "Kelvin",
+                "toBase": "x-273.15", "fromBase": "x+273.15" }
+        }
+    },
+    "time": {
+        "name": "Time",
+        "defaultSel": ["h", "m"],
+        "units": {
+            "ns": { "name": "Nanosecond", "toBase": "mis/1000" },
+            "mis": { "name": "Microsecond", "toBase": "ms/1000" },
+            "ms": { "name": "Millisecond", "toBase": "x/1000" },
+            "s": { "name": "Second", "toBase": "x" },
+            "m": { "name": "Minute", "toBase": "x*60" },
+            "h": { "name": "Hour", "toBase": "m*60" },
+            "d": { "name": "Day", "toBase": "h*24" },
+            "y": { "name": "Year", "toBase": "d*365.2422" },
+            "dec": { "name": "Decade", "toBase": "y*10" },
+            "c": { "name": "Century", "toBase": "y*100" },
+            "mil": { "name": "Millennia", "toBase": "y*1000" }
+        }
+    },
+    "storage": {
+        "name": "Digital storage",
+        "defaultSel": ["gib", "mib"],
+        "units": {
+            "bit": { "name": "Bit", "toBase": "b/8" },
+            "kbit": { "name": "Kilobit", "toBase": "kib/8" },
+            "kibit": { "name": "Kibibit", "toBase": "kib/8" },
+            "mbit": { "name": "Megabit", "toBase": "mb/8" },
+            "mibit": { "name": "Mebibit", "toBase": "mib/8" },
+            "gbit": { "name": "Gigabit", "toBase": "gb/8" },
+            "gibit": { "name": "Gibibit", "toBase": "gib/8" },
+            "tbit": { "name": "Terabit", "toBase": "tb/8" },
+            "tibit": { "name": "Tebibit", "toBase": "tib/8" },
+            "pbit": { "name": "Petabit", "toBase": "pb/8" },
+            "pibit": { "name": "Pebibit", "toBase": "pib/8" },
+            "ebit": { "name": "Exabit", "toBase": "eb/8" },
+            "eibit": { "name": "Ebibit", "toBase": "eib/8" },
+            "zbit": { "name": "Zettabit", "toBase": "zb/8" },
+            "zibit": { "name": "Zebibit", "toBase": "zib/8" },
+            "ybit": { "name": "Yottabit", "toBase": "yb/8" },
+            "yibit": { "name": "Yobibit", "toBase": "yib/8" },
+            "b": { "name": "Byte", "toBase": "x" },
+            "kb": { "name": "Kilobyte", "toBase": "x*1000" },
+            "kib": { "name": "Kibibyte", "toBase": "x*1024" },
+            "mb": { "name": "Megabyte", "toBase": "x*(1000^2)" },
+            "mib": { "name": "Mebibyte", "toBase": "x*(1024^2)" },
+            "gb": { "name": "Gigabyte", "toBase": "x*(1000^3)" },
+            "gib": { "name": "Gibibyte", "toBase": "x*(1024^3)" },
+            "tb": { "name": "Terabyte", "toBase": "x*(1000^4)" },
+            "tib": { "name": "Tebibyte", "toBase": "x*(1024^4)" },
+            "pb": { "name": "Petabyte", "toBase": "x*(1000^5)" },
+            "pib": { "name": "Pebibyte", "toBase": "x*(1024^5)" },
+            "eb": { "name": "Exabyte", "toBase": "x*(1000^6)" },
+            "eib": { "name": "Ebibyte", "toBase": "x*(1024^6)" },
+            "zb": { "name": "Zettabyte", "toBase": "x*(1000^7)" },
+            "zib": { "name": "Zebibyte", "toBase": "x*(1024^7)" },
+            "yb": { "name": "Yottabyte", "toBase": "x*(1000^8)" },
+            "yib": { "name": "Yobibyte", "toBase": "x*(1024^8)" }
+        }
+    }
+}
