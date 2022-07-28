@@ -26,7 +26,7 @@ _id('group').addEventListener('change', () => {
         const unit = group.units[key];
         [_id('aUnit'), _id('bUnit')].forEach((el) => {
             el.innerHTML += `
-                <option value="${key}">${unit.name}</option>
+                <option value="${key}" ${unit.placeholder ? 'disabled':''}>${unit.name}</option>
             `;
         });
     });

@@ -36,7 +36,8 @@
     },
     "speed": {
         "name": "Speed",
-        "defaultSel": ["cm", "ft"],
+        "defaultSel": ["mph", "kmh"],
+        "defaultVal": 60,
         "units": {}
     },
     "temp": {
@@ -72,6 +73,7 @@
         "name": "Digital storage",
         "defaultSel": ["gib", "mib"],
         "units": {
+            "-": { "name": "Bits", "placeholder": true },
             "bit": { "name": "Bit", "toBase": "b/8" },
             "kbit": { "name": "Kilobit", "toBase": "kib/8" },
             "kibit": { "name": "Kibibit", "toBase": "kib/8" },
@@ -89,6 +91,7 @@
             "zibit": { "name": "Zebibit", "toBase": "zib/8" },
             "ybit": { "name": "Yottabit", "toBase": "yb/8" },
             "yibit": { "name": "Yobibit", "toBase": "yib/8" },
+            "--": { "name": "Bytes", "placeholder": true },
             "b": { "name": "Byte", "toBase": "x" },
             "kb": { "name": "Kilobyte", "toBase": "x*1000" },
             "kib": { "name": "Kibibyte", "toBase": "x*1024" },

@@ -1,20 +1,22 @@
 
-<div class="col justify-center">
-    <div class="row justify-center">
-        <div class="input labeled dropdown" style="width: 300px">
-            <label>Unit type</label>
-            <select id="group" class="textbox">
-                <option disabled selected>Loading...</option>
-            </select>
+<div class="col">
+    <div class="col align-center">
+        <div class="row md">
+            <div class="input labeled dropdown" style="width: 300px">
+                <label>Unit type</label>
+                <select id="group" class="textbox">
+                    <option disabled selected>Loading...</option>
+                </select>
+            </div>
         </div>
     </div>
     <div class="col align-center gap-10">
         <div class="row md gap-8">
-            <div class="input labeled" style="width: 180px">
+            <div class="input labeled" style="width: 200px">
                 <label>Value A</label>
                 <input id="a" type="number" step="0.001" min="0" class="textbox" value="1">
             </div>
-            <div class="input labeled dropdown" style="width: 250px">
+            <div class="input labeled dropdown" style="width: 270px">
                 <label>Unit</label>
                 <select id="aUnit" class="textbox">
                     <option disabled selected>Loading...</option>
@@ -22,11 +24,11 @@
             </div>
         </div>
         <div class="row md gap-8">
-            <div class="input labeled" style="width: 180px">
+            <div class="input labeled" style="width: 200px">
                 <label>Value B</label>
                 <input id="b" type="number" step="0.001" min="0" class="textbox" value="1">
             </div>
-            <div class="input labeled dropdown" style="width: 250px">
+            <div class="input labeled dropdown" style="width: 270px">
                 <label>Unit</label>
                 <select id="bUnit" class="textbox">
                     <option disabled selected>Loading...</option>
@@ -34,6 +36,10 @@
             </div>
         </div>
     </div>
+    <small class="text-center">
+        <!-- https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-url-query -->
+        <a target="_blank" href="https://github.com/CyberGen49/cyber-toolbox/issues/new?labels=enhancement&title=Unit Converter - New unit request&body=Describe this unit in enough detail that we can add it to the Unit Converter.">A unit I'm looking for is missing...</a>
+    </small>
 </div>
 
 <script src="/assets/math.min.js"></script>
