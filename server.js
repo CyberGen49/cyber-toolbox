@@ -58,6 +58,10 @@ const web = http.createServer(async(req, res) => {
         });
     }
     switch (reqPathSplit[0]) {
+        case 'robots.txt':
+            res.setHeader('Content-Type', mime.getType('./app/robots.txt'));
+            const stream = fs.createReadStream('./app/robots.txt');
+            return endStream(stream);
         case 'assets':
             const filePath = path.join('.', reqPath);
             if (fs.existsSync(filePath)) {

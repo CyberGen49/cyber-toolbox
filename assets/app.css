@@ -655,29 +655,36 @@ label.selectOption .innerLabel {
     height: 24px;
     z-index: 2;
 }
+progress.bar,
 .slider progress {
     appearance: none;
-    background: var(--b50);
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    background: var(--b40);
     width: 100%;
     height: 11px;
-    margin-top: 9px;
-    z-index: 1;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 100px;
+    overflow: hidden;
     outline: none;
     border: none;
 }
+.slider progress {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 9px;
+    z-index: 1;
+}
+progress.bar::-webkit-progress-bar,
 .slider progress::-webkit-progress-bar {
     background: var(--b50);
     border-radius: 100px;
 }
+progress.bar::-webkit-progress-value,
 .slider progress::-webkit-progress-value {
     background: var(--f85);
     border-radius: 100px;
 }
+progress.bar::-moz-progress-bar,
 .slider progress::-moz-progress-bar { 
     background: var(--f85);
     border-radius: 100px;

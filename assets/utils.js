@@ -41,6 +41,16 @@ function roundSmart(number, decimalPlaces = 0) {
     return Math.round(number * factorOfTen) / factorOfTen;
 }
 
+function getWords(s){
+    s = s.replace(/(^\s*)|(\s*$)/gi, '');
+    s = s.replace(/[ ]{2,}/gi, ' ');
+    s = s.replace(/\n/g, ' ');
+    return s.split(' ').filter(String);
+}
+function countWords(s){
+    return getWords(s).length;
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }

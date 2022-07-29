@@ -1,0 +1,26 @@
+
+.wordStat {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.wordStat .head {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.wordStat .head .name {
+    color: var(--b80);
+}
+.wordStat .head .meta {
+    color: var(--b60);
+    font-size: 14px;
+    font-family: 'Sora';
+    font-weight: normal;
+    display: flex;
+    gap: 5px;
+    flex-shrink: 0;
+}
+.wordStat .bar {
+    width: 100%;
+}
