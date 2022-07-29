@@ -457,6 +457,9 @@ select.textbox {
     padding-right: 40px;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 select.textbox option:focus {
     background: #000;
