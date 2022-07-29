@@ -458,6 +458,9 @@ select.textbox {
     display: flex;
     align-items: center;
 }
+select.textbox option:focus {
+    background: #000;
+}
 .input.labeled.dropdown::after {
     position: absolute;
     top: 18px;

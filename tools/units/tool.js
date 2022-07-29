@@ -1,10 +1,23 @@
 
 let conversions = {};
 let group = {};
+let unitA;
+let unitB;
 
 window.addEventListener('load', async() => {
     const res = await fetch('./conversions.json');
     conversions = await res.json();
+    const resMoneyVal = await fetch('./currency-values.json');
+    const resMoneyNames = await fetch('./currency-symbols.json');
+    moneyVal = await resMoneyVal.json();
+    moneyNames = await resMoneyNames.json();
+    Object.keys(moneyNames.symbols).forEach((id) => {
+        conversions.currency.units[id.toLowerCase()] = {
+            name: moneyNames.symbols[id],
+            toBase: `x/${moneyVal.rates[id]}`
+        }
+    });
+    conversions.currency.name += ` (${moneyVal.date})`;
     console.log(conversions);
     _id('group').innerHTML = '';
     Object.keys(conversions).forEach((key) => {
@@ -14,6 +27,7 @@ window.addEventListener('load', async() => {
             <option value="${key}">${group.name}</option>
         `;
     });
+    _id('group').value = 'length';
     _id('group').dispatchEvent(new Event('change'));
 });
 
@@ -32,14 +46,17 @@ _id('group').addEventListener('change', () => {
     });
     _id('aUnit').value = group.defaultSel[0];
     _id('bUnit').value = group.defaultSel[1];
+    _id('group').disabled = false;
+    _id('aUnit').disabled = false;
+    _id('bUnit').disabled = false;
     calculate('a');
 });
 
 function calculate(caller) {
     const a = _id('a');
     const b = _id('b');
-    const unitA = _id(`aUnit`).value;
-    const unitB = _id(`bUnit`).value;
+    unitA = _id(`aUnit`).value;
+    unitB = _id(`bUnit`).value;
     const unitIdsByLength = Object.keys(group.units).sort((a, b) => {
         return (a.length-b.length);
     }).reverse();
@@ -79,9 +96,8 @@ function calculate(caller) {
 [_id('aUnit'), _id('bUnit')].forEach((el) => {
     el.addEventListener('change', () => {
         if (_id('aUnit').value == _id('bUnit').value) {
-            let tmp = _id('aUnit').value;
-            _id('aUnit').value = _id('bUnit').value;
-            _id('bUnit').value = tmp;
+            _id('aUnit').value = unitB;
+            _id('bUnit').value = unitA;
         }
         calculate('a');
     });

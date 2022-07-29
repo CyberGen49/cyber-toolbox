@@ -1,7 +1,19 @@
 {
+    "area": {
+        "name": "Area",
+        "defaultSel": ["acre", "ft2"],
+        "units": {
+            "m2": { "name": "Square meter", "toBase": "x" },
+            "ft2": { "name": "Square foot", "toBase": "x/10.764" },
+            "km2": { "name": "Square kilometer", "toBase": "x*1e6" },
+            "mi2": { "name": "Square mile", "toBase": "km2*2.59" },
+            "acre": { "name": "Acre", "toBase": "mi2/640" },
+            "cont": { "name": "Earth's surface area", "toBase": "mi2*196900000" }
+        }
+    },
     "length": {
         "name": "Length",
-        "defaultSel": ["ft", "cm"],
+        "defaultSel": ["m", "ft"],
         "units": {
             "nm": { "name": "Nanometer", "toBase": "x/1e7" },
             "mim": { "name": "Micrometer", "toBase": "x/10000" },
@@ -19,15 +31,21 @@
             "obu": { "name": "Observable universe", "toBase": "ly*93016000000" }
         }
     },
-    "area": {
-        "name": "Area",
-        "defaultSel": ["cm", "ft"],
-        "units": {}
-    },
     "mass": {
-        "name": "Mass",
-        "defaultSel": ["cm", "ft"],
-        "units": {}
+        "name": "Weight and mass",
+        "defaultSel": ["lb", "kg"],
+        "defaultVal": 120,
+        "units": {
+            "mig": { "name": "Microgram", "toBase": "mg/1000" },
+            "mg": { "name": "Milligram", "toBase": "g/1000" },
+            "g": { "name": "Gram", "toBase": "x/1000" },
+            "kg": { "name": "Kilogram", "toBase": "x" },
+            "mtn": { "name": "Metric ton", "toBase": "x*1000" },
+            "oz": { "name": "Ounce", "toBase": "lb/16" },
+            "lb": { "name": "Pound", "toBase": "x/2.205" },
+            "ustn": { "name": "US ton", "toBase": "lb*2000" },
+            "tn": { "name": "Imperial ton", "toBase": "lb*2240" }
+        }
     },
     "volume": {
         "name": "Volume",
@@ -36,25 +54,36 @@
     },
     "speed": {
         "name": "Speed",
-        "defaultSel": ["mph", "kmh"],
+        "defaultSel": ["mph", "kph"],
         "defaultVal": 60,
+        "units": {
+            "ms": { "name": "Meters per second", "toBase": "x" },
+            "kph": { "name": "Kilometers per hour", "toBase": "x/3.6" },
+            "fps": { "name": "Feet per second", "toBase": "x/3.28084" },
+            "mph": { "name": "Miles per hour", "toBase": "x/2.237" },
+            "knot": { "name": "Knot", "toBase": "kph*1.852" },
+            "mach": { "name": "Speed of sound", "toBase": "x*343" },
+            "light": { "name": "Speed of light", "toBase": "x*299792458" }
+        }
+    },
+    "freq": {
+        "name": "Frequency",
+        "defaultSel": ["cm", "ft"],
         "units": {}
     },
-    "temp": {
-        "name": "Temperature",
-        "defaultSel": ["f", "c"],
-        "defaultVal": 32,
-        "units": {
-            "c": { "name": "Celsius", "toBase": "x" },
-            "f": { "name": "Fahrenheit",
-                "toBase": "(x-32)*(5/9)", "fromBase": "(x*(9/5))+32" },
-            "k": { "name": "Kelvin",
-                "toBase": "x-273.15", "fromBase": "x+273.15" }
-        }
+    "energy": {
+        "name": "Energy",
+        "defaultSel": ["cm", "ft"],
+        "units": {}
+    },
+    "currency": {
+        "name": "Currency",
+        "defaultSel": ["usd", "gbp"],
+        "units": {}
     },
     "time": {
         "name": "Time",
-        "defaultSel": ["h", "m"],
+        "defaultSel": ["d", "s"],
         "units": {
             "ns": { "name": "Nanosecond", "toBase": "mis/1000" },
             "mis": { "name": "Microsecond", "toBase": "ms/1000" },
@@ -67,6 +96,18 @@
             "dec": { "name": "Decade", "toBase": "y*10" },
             "c": { "name": "Century", "toBase": "y*100" },
             "mil": { "name": "Millennia", "toBase": "y*1000" }
+        }
+    },
+    "temp": {
+        "name": "Temperature",
+        "defaultSel": ["f", "c"],
+        "defaultVal": 32,
+        "units": {
+            "c": { "name": "Celsius", "toBase": "x" },
+            "f": { "name": "Fahrenheit",
+                "toBase": "(x-32)*(5/9)", "fromBase": "(x*(9/5))+32" },
+            "k": { "name": "Kelvin",
+                "toBase": "x-273.15", "fromBase": "x+273.15" }
         }
     },
     "storage": {
