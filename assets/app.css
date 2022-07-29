@@ -450,7 +450,7 @@ input[type="number"].textbox {
 .textbox:focus:not(:disabled) {
     border-color: var(--f80) !important;
     background: var(--b10);
-    box-shadow: 0px 0px 0px 1px var(--f80);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 1px var(--f80);
 }
 select.textbox {
     position: relative;
