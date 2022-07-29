@@ -1,7 +1,7 @@
 {
     "name": "Unit Converter",
     "icon": "scale",
-    "desc": "Convert between many different units of length, time, data, and more.",
+    "desc": "Convert units of area, length, mass, speed, currency, time, temperature, data, and more.",
     "group": "math",
     "hidden": true
 }

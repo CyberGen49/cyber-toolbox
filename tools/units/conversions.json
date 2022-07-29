@@ -78,7 +78,7 @@
     },
     "currency": {
         "name": "Currency",
-        "defaultSel": ["usd", "gbp"],
+        "defaultSel": ["usd", "eur"],
         "units": {}
     },
     "time": {

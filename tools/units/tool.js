@@ -11,13 +11,13 @@ window.addEventListener('load', async() => {
     const resMoneyNames = await fetch('./currency-symbols.json');
     moneyVal = await resMoneyVal.json();
     moneyNames = await resMoneyNames.json();
+    conversions.currency.name += ` (${moneyVal.date})`;
     Object.keys(moneyNames.symbols).forEach((id) => {
         conversions.currency.units[id.toLowerCase()] = {
             name: moneyNames.symbols[id],
             toBase: `x/${moneyVal.rates[id]}`
         }
     });
-    conversions.currency.name += ` (${moneyVal.date})`;
     console.log(conversions);
     _id('group').innerHTML = '';
     Object.keys(conversions).forEach((key) => {
