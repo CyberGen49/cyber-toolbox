@@ -1,0 +1,7 @@
+{
+    "name": "Coin Flip",
+    "icon": "casino",
+    "desc": "Flip a coin.",
+    "group": "rand",
+    "hidden": true
+}

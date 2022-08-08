@@ -2,6 +2,5 @@
     "name": "Unit Converter",
     "icon": "scale",
     "desc": "Convert units of area, length, mass, speed, currency, time, temperature, data, and more.",
-    "group": "math",
-    "hidden": true
+    "group": "math"
 }
