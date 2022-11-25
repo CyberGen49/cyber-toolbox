@@ -14,6 +14,6 @@ setInterval(() => {
     }
 }, 10);
 
-if (params.nobg) document.body.classList.add('noBack');
-if (params.nocenter) document.body.classList.add('noCenter');
-if (params.noscroll) document.body.classList.add('noScroll');
+if (params.get('nobg')) document.body.classList.add('noBack');
+if (params.get('nocenter')) document.body.classList.add('noCenter');
+if (params.get('noscroll')) document.body.classList.add('noScroll');

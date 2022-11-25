@@ -1,6 +1,7 @@
 
 // Javascript for the single-page app
 
+const isRedirected = params.get('redirected');
 const _init = (async() => {
     const res = await fetch(`/get/init`);
     return res.json();
@@ -82,6 +83,9 @@ async function updatePage(url = window.location.href, replace = false) {
         });
         _id('main').innerHTML = `
             <div id="content">
+                <div class="notice" style="margin-bottom: 15px">
+                    <p>If you use Discord, consider checking out <a href="https://cybot.simplecyber.org">Cybot</a>, a bot which has commands for most of these tools and more!</p>
+                </div>
                 <label class="selectOption">
                     <input type="checkbox" id="launchInPopup">
                     <div class="innerLabel">
@@ -125,6 +129,14 @@ window.addEventListener('load', () => {
     _id('github').addEventListener('click', () => {
         window.open('https://github.com/CyberGen49/cyber-toolbox', '_blank');
     });
+    if (isRedirected) showPopup(`The tools have moved`, `
+        <p>Hey, it looks like you tried to access a tool on SimpleCyber.org!</p>
+        <p>SimpleCyber.org was recently rebuilt from scratch, and all tools were removed, so you've been redirected to the new, dedicated tools site, Cyber's Toolbox!</p>
+        <p>Not all tools that were previously available on SimpleCyber.org are in Cyber's Toolbox yet, but they should appear soon.</p>
+    `, [{
+        label: 'Okay',
+        primary: true
+    }]);
 });
 window.addEventListener('message', (e) => {
     switch (e.data.action) {
